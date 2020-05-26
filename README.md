@@ -1,6 +1,6 @@
 ## My VS Code Settings :heart:
 ### Demo
-![](https://i.imgur.com/PLVOqpS.png)
+![](https://i.imgur.com/bNCPkyQ.png)
 
 ### <3
 - Font: OperatorMonoLigLight
@@ -28,6 +28,7 @@
 - TSLint
 - Vetur
 - Vibrancy
+- background
 
 ```json
 {
@@ -36,8 +37,7 @@
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
   "editor.lineHeight": 26, // 24
-  "editor.fontFamily": "OperatorMonoSSmLig-Light", //OperatorMonoSSmLig-Book//Operator Mono Lig
-  "workbench.iconTheme": "vscode-seedling-icon-theme",
+  "editor.fontFamily": "OperatorMonoSSmLig-Light",
   "workbench.colorCustomizations": {
     "statusBar.background": "#0d0e0f",
     "statusBar.noFolderBackground": "#0d0e0f",
@@ -49,6 +49,7 @@
   // setting Vibracy
   "vscode_vibrancy.opacity": 0,
   "editor.semanticHighlighting.enabled": false,
+  //fase
   // emmet config
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
@@ -63,13 +64,12 @@
   // auto open new tab in vscode
   "workbench.editor.enablePreview": false,
   // disable warning plint
-  "python.pythonPath": "venv/bin/python",
+  "python.pythonPath": "/Users/quoctrung163/opt/miniconda3/envs/tensorflow/bin/python",
   "python.linting.pylintPath": "venv/bin/pylint",
   // Editor Tweak
   "files.eol": "\n",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.formatOnSave": true,
   "editor.renderWhitespace": "none",
   // TS lint
   "tslint.autoFixOnSave": true,
@@ -126,12 +126,20 @@
     "**/venv/**": true,
     "env-*": true
   },
-  "editor.tokenColorCustomizations": {
-    "semanticHighlighting": true
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
   },
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.colorTheme": "CodeSandbox",
   "terminal.integrated.rendererType": "dom",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.inheritEnv": false,
+  "workbench.colorTheme": "CodeSandbox",
+  "files.associations": {
+    "*.extension": "html"
+  },
+  "workbench.iconTheme": "vscode-seedling-icon-theme",
+  "background.enabled": true
 }
 ```
 
